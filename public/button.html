@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <script src="build/react.js"></script>
+    <script src="build/JSXTransformer.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+    <script type="text/jsx">
+	var Button = React.createClass({
+		render: function() {
+		return <div>{this.props.name}: {this.props.myvalue}</div>
+		}
+
+	});
+
+React.render(<Button name="myButton" myvalue="MyValue"/>, document.body);
+    </script>
+  </body>
+</html>

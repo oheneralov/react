@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <script src="build/react.js"></script>
+    <script src="build/JSXTransformer.js"></script>
+	<script type="text/jsx" src="AngularUI.js"></script>
+  </head>
+  <body>
+    <script type="text/jsx">
+//React.render(<LoginForm EmailCaption = "Email:" PasswordCaption = "Password:" ButtonCaption = "Send" />, //document.body);
+
+var props = {};
+props.NameCaption = "Name";
+props.SurnameCaption = "Surname";
+props.EmailCaption = "Email:";
+props.PasswordCaption = "Password:";
+props.RepeatPasswordCaption = "Repeat Password:";
+props.ButtonCaption = "Send";
+React.render(<RegisterForm {...props} />, document.body);
+    </script>
+  </body>
+</html>
